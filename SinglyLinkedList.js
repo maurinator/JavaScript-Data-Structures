@@ -41,4 +41,21 @@ SinglyList.prototype.remove = function (position) {
   if (position < 0 || position > this._length || this._length == 0) {
     throw new Error('Index out of range...');
   }
+
+  var removeHead = position == 0;
+  if (removeHead) {
+    this._head = this._head._next;
+  } else {
+    var previous = this._head;
+    var current = previous._next;
+    var i = 0;
+    while ( i < position - 1) {
+      previous = previous._next;
+      current = previous._next;
+      i++;
+    }
+    previous._next = current._next;
+    current = null;
+  }
+  this._length--;
 };
