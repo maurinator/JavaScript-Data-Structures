@@ -12,14 +12,14 @@ SinglyList.prototype.add = function (value) {
   var currentNode = this._head,
     node = new Node(value);
   if (!currentNode) {
-    this.head = node;
+    this._head = node;
     this._length++;
     return;
   }
   while (currentNode._next) {
     currentNode = currentNode._next;
   }
-  currentNode.next = node;
+  currentNode._next = node;
   this._length++;
 }
 
