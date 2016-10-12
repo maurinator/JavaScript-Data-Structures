@@ -1,9 +1,3 @@
-/*
-  Mauricio Amezcua
-  Implementation of Stack Data Structure on Javascript
-  October 11th, 2016
-*/
-
 function Stack () {
   this._size = 0;
   this._container = {};

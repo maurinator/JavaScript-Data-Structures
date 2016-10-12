@@ -1,8 +1,3 @@
-/*
-  Mauricio Amezcua
-  Implementation of Queue Data Structure on Javascript
-  October 11th, 2016
-*/
 function Queue () {
   this._container = {};
   this._oldest = 1;
