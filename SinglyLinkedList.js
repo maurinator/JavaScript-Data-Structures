@@ -36,7 +36,6 @@ SinglyList.prototype.get = function (position) {
   return node;
 }
 
-// needs to be implemented
 SinglyList.prototype.remove = function (position) {
   if (position < 0 || position > this._length || this._length == 0) {
     throw new Error('Index out of range...');
